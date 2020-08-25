@@ -1,0 +1,18 @@
+{
+  "name": "todolistsql",
+  "version": "1.0.0",
+  "description": "Projeto acadêmico dos alunos da Faculdade Católica Imaculada Conceição do Recife.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon server.js"
+  },
+  "author": "Daniel Levino",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
