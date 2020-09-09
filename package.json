@@ -1,18 +1,27 @@
 {
   "name": "todolistsql",
   "version": "1.0.0",
-  "description": "Projeto acadêmico dos alunos da Faculdade Católica Imaculada Conceição do Recife.",
+  "description": "Projeto acadêmico dos alunos da Faculdade Católica Imaculada Conceição do Recife. Modelo 2020.2, 2º período",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon server.js"
+    "start": "nodemon server.js" 
   },
   "author": "Daniel Levino",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
   },
+  
   "devDependencies": {
     "nodemon": "^2.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-Levino/todoListSQL.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Daniel-Levino/todoListSQL/issues"
+  },
+  "homepage": "https://github.com/Daniel-Levino/todoListSQL#readme"
 }
