@@ -27,7 +27,7 @@ app.route('/')
         res.send("API TodoList FICR Funcionando")
     })
     
-const port = process.env.PORT || 3005 // porta que deverá rodar a aplicação
+const port = process.env.PORT || 3000 // porta que deverá rodar a aplicação
 
 app.listen(port)
 

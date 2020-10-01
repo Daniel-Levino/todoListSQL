@@ -11,3 +11,7 @@ exports.listAll = (req, res) => {
 	]
 	res.send(usuarios)
 }
+
+exports.createOne = (req, res) => {
+	res.send("Usuário criado com sucesso");
+}
