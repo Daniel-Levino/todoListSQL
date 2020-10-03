@@ -4,5 +4,4 @@ module.exports = function (app) {
 	app.route('/usuarios')
 		.get(usuarios.listAll)
 		.post(usuarios.createOne)
-    
 }
