@@ -1,24 +1,18 @@
-
+const Categoria = require('../models').Categoria
 
 exports.listAll = (req,res) => {
-    const caterorias = [
-        {
-            descricao:"urgente."
-        },
-        {
-            descricao:"Para proxima semana."
-        },
-        {
-            descricao:"Passar na frente."
-        }
-    ]
-    res.send(caterorias)
+    Categoria.findAll().then(categorias => {
+        res.send(categorias)
+    }).catch(error => {
+        res.send(error)
+    })
 }
 
 exports.createOne = (req, res) => {
-    const resposta = {
-        message: "Post Categoria criado com sucesso",
-        data: req.body
-    }
-    res.send(resposta)
+    const {descricao} = req.body
+    Categoria.create({descricao}).then(categoria => {
+        res.send(categoria)
+    }).catch(error => {
+        res.send(error)
+    })
 }
