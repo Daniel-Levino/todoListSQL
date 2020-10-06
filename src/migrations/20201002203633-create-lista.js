@@ -14,7 +14,7 @@ module.exports = {
       usuarioId: {
         type: Sequelize.INTEGER,
         model: 'Usuario',
-        key: 'Id'
+        key: 'id'
       },
       createdAt: {
         allowNull: false,

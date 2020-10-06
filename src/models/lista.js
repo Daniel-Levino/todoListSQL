@@ -10,9 +10,9 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      Lista.belongsTo(models.Usuario,{
-        targetKey: 'id',
-        as: 'idUsuario'
+      Lista.belongsTo(models.Usuario, {
+        targetKey: 'id'
+        //as: 'idUsuario'
       })
     }
   };

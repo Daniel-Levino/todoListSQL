@@ -18,9 +18,11 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 
 //
-const routes = require('./src/routes/usuariosRoutes')
+const usuariosRoutes = require('./src/routes/usuariosRoutes')
+const listasRoutes = require('./src/routes/listasRoutes')
 
-routes(app)
+listasRoutes(app)
+usuariosRoutes(app)
 
 app.route('/')
     .get((req, res) => {

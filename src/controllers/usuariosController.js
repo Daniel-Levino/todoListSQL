@@ -10,8 +10,8 @@ exports.listAll = (req, res) => {
 }
 
 exports.createOne = (req, res) => {
-	const {nome, email} = req.body
-	Usuario.create({nome, email}).then(usuario =>{
+	const {nome, email, senha} = req.body
+	Usuario.create({nome, email, senha}).then(usuario =>{
 		res.send(usuario)
 	}).catch(error => {
 		res.send(error)
