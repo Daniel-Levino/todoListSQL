@@ -21,10 +21,16 @@ app.use(bodyParser.json())
 const usuariosRoutes = require('./src/routes/usuariosRoutes')
 const listasRoutes = require('./src/routes/listasRoutes')
 const categoriaRoutes = require('./src/routes/categoriasRoutes')
+const atividadesRoutes = require('./src/routes/atividadesRoutes')
+const statusRoutes = require('./src/routes/statusRoutes')
+const respondeRoutes = require('./src/routes/respondeRoutes')
 
 listasRoutes(app)
 usuariosRoutes(app)
 categoriaRoutes(app)
+atividadesRoutes(app)
+statusRoutes(app)
+respondeRoutes(app)
 
 app.route('/')
     .get((req, res) => {
